@@ -173,7 +173,36 @@ t = [4,5,6]
 p = s + t
 # [1,2,3,4,5,6]
 
+# Metodos de lista
+stuff = list() # Crear lista
+stuff.append("book") #Agrega un elemento
+"book" in stuff #Se fija si esta el elemento en la lista
+"book" not in stuff #Se fija si no esta el elemento en la lista
+stuff.sort() # Ordena la lista
+sum(stuff) # Suma los elementos de una lista de numeros
+max(stuff) # Busca el maximo de una lista de numeros
+min(stuff) # Busca el maximo de una lista de numeros
+"Lucio Altamirano lalt123@gmail.com".split() # Separa el string por los espacios
+"Lucio Altamirano lalt123@gmail.com".split('@') # Separa el string tomando como referencia el @
 
+# Metodos de la lista
+['append', 'count', 'extend', 'index', 'insert',
+'pop', 'remove', 'reverse', 'sort']
+# Arrays asociativos / Diccionarios
+purse = dict()
+purse["money"] = 12
+conunts = dict()
+x = counts.get(name, 0) # Cantidad de veces que aparece en el dict. Si fuese otro valor seria un elemento que tenga es valor.
 
+#  tuplas
+## creacion
+t = tuple()
+(x,y) = (4, "fred")
 
+d = dict()
+tups = d.items()
+# resultado = lista de tuplas
 
+# Sorted
+d = {'a': 10, 'b' : 1, 'c' : 22}
+t = sorted(d.items())
