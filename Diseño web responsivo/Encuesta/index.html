@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="title">
+            <h1 id="" title>freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" class="form-control" id="age" name="number" min="10" max="90" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">Country</label>
+                <select name="dropdown" id="dropdown" class="form-control">
+                    <option value="ar">Argentina</option>
+                    <option value="br">Brasil</option>
+                    <option value="mx">Mexico</option>
+                </select>
+            </div>
+
+            <div >
+                <div class="form-group" style="display: inline-block; margin-right: 30px;">
+                    <p>Genre</p>
+                    <label for="male-radio" id="male-label"><input type="radio" name="genre" id="male-radio">   Male</label>
+                    <label for="fem-radio" id="fem-label"><input type="radio" name="genre" id="fem-radio">   Female</label>
+                    <label for="binary-radio" id="binary-label"><input type="radio" name="genre" id="binary-radio">   No binary</label>
+                </div>
+
+                <div class="form-group" style="display: inline-block; margin-left: 30px;">
+                    <p>Skills</p>
+                    <label for="js-checkbox" id="js-label"><input type="checkbox" name="genre" id="js-checkbox">   Javascript</label>
+                    <label for="python-checkbox" id="python-label"><input type="checkbox" name="genre" id="python-checkbox">   Python</label>
+                    <label for="net-checkbox" id="net-label"><input type="checkbox" name="genre" id="net-checkbox">   .Net</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="obs" id="obs-label">Observations</label>
+                <textarea name="obs" class="form-control" id="obs" cols="65" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="form control" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
