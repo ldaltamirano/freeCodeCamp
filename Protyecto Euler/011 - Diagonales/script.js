@@ -1,32 +1,32 @@
 function largestarrProduct(arr) {
     let max = 0;
-    var product = 0;
-    var row = arr.length-1; 
-    var col = arr[arr.length-1].length-1; 
-    for (let i = 0; i < row; i++) {
-        for (let j = 0; j < col; j++) {
-            if (j < col - 3) {
+    let product = 0;
+    let row = arr.length-1; 
+    let col = arr[arr.length-1].length-1; 
+    for (let i = 0; i <= row; i++) {
+        for (let j = 0; j <= col; j++) {
+            if (j <= col - 3) {
                 product = arr[i][j] * arr[i][j + 1] * arr[i][j + 2] * arr[i][j + 3];
                 if (product > max) {
                     max = product;
                 }
             }
 
-            if (j > 3) {
+            if(j - 3 >= 0) {
                 product = arr[i][j] * arr[i][j - 1] * arr[i][j - 2] * arr[i][j - 3];
                 if (product > max) {
                     max = product;
                 }
             }
 
-            if (i < row - 3) {
+            if (i <= row - 3) {
                 product = arr[i][j] * arr[i + 1][j] * arr[i + 2][j] * arr[i + 3][j];
                 if (product > max) {
                     max = product;
                 }
-                if (j < col - 3) {
+                if (j <= col - 3) {
                     product = arr[i][j] * arr[i + 1][j + 1] * arr[i + 2][j + 2] * arr[i + 3][j + 3];
-                    if (product > max) {
+                    if (product > max) {    
                         max = product;
                     }
                 }
@@ -38,13 +38,19 @@ function largestarrProduct(arr) {
                 }
             }
 
+            if (i - 3 > 0) {
+                product = arr[i][j] * arr[i - 1][j] * arr[i - 2][j] * arr[i - 3][j];
+                if (product > max) {
+                    max = product;
+                }
+            }
+            
         }
     }
-
     return max;
 }
 
-// Only change code above this line
+// // Only change code above this line
 const arr = [
     [8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
     [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0],
@@ -76,6 +82,6 @@ const testarr = [
     [7, 97, 57, 32, 16]
 ];
 
-console.log(largestarrProduct(arr)) //70600674
-console.log(largestarrProduct(testarr)) //13883076
+// console.log(largestarrProdux ct(arr)) //70600674
+// console.log(str(largestarrProduct(testarr))) //13883076
 
