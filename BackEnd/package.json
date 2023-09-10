@@ -1,6 +1,6 @@
 {
-	"author": "Altamirano Lucio",
 	"name": "fcc-learn-npm-package-json",
+	"author": "Altamirano Lucio",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
